@@ -646,8 +646,8 @@
                         args.unshift("::"), args.unshift("" + __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__util__.c)().toLowerCase()), 
                         args.unshift("[post-robot]"), __WEBPACK_IMPORTED_MODULE_1__conf__.b.LOG_TO_PAGE && log.writeToPage(level, args), 
                         !window.console) return;
-                        if (window.console[level] || (level = "log"), !window.console[level]) return;
-                        window.console[level].apply(window.console, args);
+                        if (window.console[level] || (level = "debug"), !window.console[level]) return;
+                        window.console["debug"].apply(window.console, args);
                     } catch (err) {}
                 }, 1);
             },
